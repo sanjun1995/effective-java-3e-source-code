@@ -20,6 +20,11 @@ public class Chooser<T> {
     }
 
     public static void main(String[] args) {
+//        Object[] objects = new Long[1];
+//        objects[0] = "I don't fit in";
+
+//        List<Object> objects = new ArrayList<>();
+
         List<Integer> intList = List.of(1, 2, 3, 4, 5, 6);
 
         Chooser<Integer> chooser = new Chooser<>(intList);

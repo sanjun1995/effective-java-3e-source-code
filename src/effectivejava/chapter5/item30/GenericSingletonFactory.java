@@ -5,7 +5,7 @@ import java.util.function.UnaryOperator;
 // Generic singleton factory pattern (Page 136-7)
 public class GenericSingletonFactory {
     // Generic singleton factory pattern
-    private static UnaryOperator<Object> IDENTITY_FN = (t) -> t;
+    private static UnaryOperator<Object> IDENTITY_FN = (t) -> t + "1";
 
     @SuppressWarnings("unchecked")
     public static <T> UnaryOperator<T> identityFunction() {

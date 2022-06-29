@@ -14,8 +14,8 @@ public class Inverse {
     }
 
     public static void main(String[] args) {
-        double x = Double.parseDouble(args[0]);
-        double y = Double.parseDouble(args[1]);
+        double x = Double.parseDouble("1.1");
+        double y = Double.parseDouble("1.2");
         for (Operation op : Operation.values()) {
             Operation invOp = inverse(op);
             System.out.printf("%f %s %f %s %f = %f%n",

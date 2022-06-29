@@ -1,8 +1,10 @@
 package effectivejava.chapter5.item33;
 import java.lang.annotation.*;
 import java.lang.reflect.*;
+import java.util.ArrayList;
 
 // Use of asSubclass to safely cast to a bounded type token (Page 155)
+@Deprecated(since = "print")
 public class PrintAnnotation {
     static Annotation getAnnotation(AnnotatedElement element,
                                     String annotationTypeName) {
@@ -24,7 +26,7 @@ public class PrintAnnotation {
             System.exit(1);
         }
         String className = args[0];
-        String annotationTypeName = args[1]; 
+        String annotationTypeName = args[1];
         Class<?> klass = Class.forName(className);
         System.out.println(getAnnotation(klass, annotationTypeName));
     }
