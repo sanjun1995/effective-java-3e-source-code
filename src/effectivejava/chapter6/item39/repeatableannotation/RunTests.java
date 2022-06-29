@@ -43,7 +43,7 @@ public class RunTests {
                             break;
                         }
                     }
-                    if (passed == oldPassed)
+                    if (passed != oldPassed)
                         System.out.printf("Test %s failed: %s %n", m, exc);
                 }
             }
